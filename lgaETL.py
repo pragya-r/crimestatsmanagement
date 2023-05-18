@@ -123,7 +123,7 @@ for path in list(bocsar_dir.rglob('*.xlsx*')):
     month_df = month_df.iloc[5:37].loc[~(month_df['NSW Recorded Crime Statistics 2022'] == 'Betting and gaming offences')].drop(month_df.columns[0], axis=1).sum()
     month_data.loc[len(month_data)] = [month_df.iloc[0], month_df.iloc[1], month_df.iloc[2], month_df.iloc[3], month_df.iloc[4], month_df.iloc[5], month_df.iloc[6], month_df.iloc[7], month_df.iloc[8], month_df.iloc[9], month_df.iloc[10], month_df.iloc[11]]
 
-# TRANSFORM EXTRACTED DATA INTO THE CORRESPODING DESTINATION FORMAT
+# TRANSFORM EXTRACTED DATA INTO THE CORRESPONDING DESTINATION FORMAT
 # transform lga codes
 lga_codes = lga_no.astype(int).sort_values(by='LgaNo').reset_index(drop=True)
 lga_df['LgaId'] = emp_xlsx.iloc[3:132, 1].reset_index(drop=True)
