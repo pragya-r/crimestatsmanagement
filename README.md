@@ -9,3 +9,6 @@ In order to run the pipelines, all files within the directory, **main_pipeline**
 
 ### SQL Database
 An Azure SQL database is used as the final store. Table's within the database can be found under the directory, **sql_db**.
+
+### Azure Databricks notebook
+The code used in the databricks note book can be found in **lgaETL.py**.
