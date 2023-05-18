@@ -1,0 +1,28 @@
+{
+    "name": "EIncomeT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "EIncomeId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "MedianIncome",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "EIncomeT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

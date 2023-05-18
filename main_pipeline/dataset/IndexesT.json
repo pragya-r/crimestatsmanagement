@@ -1,0 +1,43 @@
+{
+    "name": "IndexesT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "IndexId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "SEDis",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "SEDisAdv",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "EcoResources",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "EduOccupation",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "IndexesT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,43 @@
+{
+    "name": "AgeRangeT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "AgeId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Under18",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "YoungAdult",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Adult",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "OlderAdult",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "AgeRangeT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

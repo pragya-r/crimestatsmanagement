@@ -1,0 +1,24 @@
+{
+    "now": "2023-05-18T16:19:11.762Z",
+    "perfNow": 3212525.5,
+    "diagnosticCorrelation": "59d78113-33e7-4050-9a93-e1e68edfcb47",
+    "source": "DownloadSupportFiles",
+    "environment": {
+        "productName": "adf",
+        "buildVersion": "1.0.051623.8",
+        "environmentType": 3,
+        "resourceName": "lgastatdatafactory",
+        "resourceRegion": "australiasoutheast",
+        "resourceGroup": "lgastatsresourcegrp",
+        "subscriptionId": "7ba7350a-7e70-4465-8182-f05fb152b934",
+        "sessionId": "AVxTgz0eODk+j8bEo0P5LS",
+        "operationId": "",
+        "gitType": "live",
+        "loggingKey": "5525b4c0-e540-417c-a690-ab1f9ff1d73e"
+    },
+    "additionalInfo": {
+        "selectedResource": "lgastatistics_pipeline",
+        "selectedResourceType": "pipeline",
+        "dataFlowSessionId": "ec814622-9b45-4008-9ff8-85434f03a2f0"
+    }
+}

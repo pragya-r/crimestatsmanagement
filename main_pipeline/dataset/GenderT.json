@@ -1,0 +1,33 @@
+{
+    "name": "GenderT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "GenderId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Male",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Female",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "GenderT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

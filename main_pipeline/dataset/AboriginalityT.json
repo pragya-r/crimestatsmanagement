@@ -1,0 +1,33 @@
+{
+    "name": "AboriginalityT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "AboriginalityId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Aboriginal",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "NonAboriginal",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "AboriginalityT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

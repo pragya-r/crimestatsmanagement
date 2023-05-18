@@ -1,0 +1,83 @@
+{
+    "name": "MonthT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "MonthId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "January",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "February",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "March",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "April",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "May",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "June",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "July",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "August",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "September",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "October",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "November",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "December",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "MonthT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

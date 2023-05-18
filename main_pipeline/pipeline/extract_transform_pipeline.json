@@ -1,0 +1,30 @@
+{
+    "name": "extract_transform_pipeline",
+    "properties": {
+        "activities": [
+            {
+                "name": "extract and transform",
+                "type": "DatabricksNotebook",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/Users/pragyaparamita.roy@outlook.com/lgaETL"
+                },
+                "linkedServiceName": {
+                    "referenceName": "lgastats_db_notebook",
+                    "type": "LinkedServiceReference"
+                }
+            }
+        ],
+        "annotations": [],
+        "lastPublishTime": "2023-05-09T15:48:21Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}

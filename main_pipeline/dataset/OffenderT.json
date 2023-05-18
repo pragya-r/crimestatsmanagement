@@ -1,0 +1,33 @@
+{
+    "name": "OffenderT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "OffenderId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "GenderId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "AgeId",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "OffenderT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,33 @@
+{
+    "name": "IncomeT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "IncomeId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "EIncomeId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "BenefitsId",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "IncomeT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

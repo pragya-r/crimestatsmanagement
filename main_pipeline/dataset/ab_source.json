@@ -1,0 +1,38 @@
+{
+    "name": "ab_source",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatsdatalakestorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "AboriginalityT.csv",
+                "folderPath": "db_out",
+                "fileSystem": "inputdestination"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "AboriginalityId",
+                "type": "String"
+            },
+            {
+                "name": "Aboriginal",
+                "type": "String"
+            },
+            {
+                "name": "NonAboriginal",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

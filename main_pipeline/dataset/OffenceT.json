@@ -1,0 +1,43 @@
+{
+    "name": "OffenceT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "OffenceId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "IncidentNo",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "MonthId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "TimeId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "AboriginalityId",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "OffenceT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

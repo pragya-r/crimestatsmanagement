@@ -1,0 +1,33 @@
+{
+    "name": "PopulationT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "PopulationId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "EstimatePop",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "IndigenousPop",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "PopulationT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

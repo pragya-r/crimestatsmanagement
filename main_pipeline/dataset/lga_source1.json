@@ -1,0 +1,58 @@
+{
+    "name": "lga_source1",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatsdatalakestorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "LgaT.csv",
+                "folderPath": "db_out",
+                "fileSystem": "inputdestination"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "Prop_0",
+                "type": "String"
+            },
+            {
+                "name": "LgaId",
+                "type": "String"
+            },
+            {
+                "name": "LgaName",
+                "type": "String"
+            },
+            {
+                "name": "OffenceId",
+                "type": "String"
+            },
+            {
+                "name": "IncomeId",
+                "type": "String"
+            },
+            {
+                "name": "IndexId",
+                "type": "String"
+            },
+            {
+                "name": "PopulationId",
+                "type": "String"
+            },
+            {
+                "name": "UnemploymentId",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

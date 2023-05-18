@@ -1,0 +1,46 @@
+{
+    "name": "indexes_source",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatsdatalakestorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "IndexesT.csv",
+                "folderPath": "db_out",
+                "fileSystem": "inputdestination"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "IndexId",
+                "type": "String"
+            },
+            {
+                "name": "SEDis",
+                "type": "String"
+            },
+            {
+                "name": "SEDisAdv",
+                "type": "String"
+            },
+            {
+                "name": "EcoResources",
+                "type": "String"
+            },
+            {
+                "name": "EduOccupation",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

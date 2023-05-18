@@ -1,0 +1,50 @@
+{
+    "name": "offence_source",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatsdatalakestorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "OffenceT.csv",
+                "folderPath": "db_out",
+                "fileSystem": "inputdestination"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "OffenceId",
+                "type": "String"
+            },
+            {
+                "name": "IncidentNo",
+                "type": "String"
+            },
+            {
+                "name": "MonthId",
+                "type": "String"
+            },
+            {
+                "name": "TimeId",
+                "type": "String"
+            },
+            {
+                "name": "OffenderId",
+                "type": "String"
+            },
+            {
+                "name": "AboriginalityId",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

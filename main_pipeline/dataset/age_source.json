@@ -1,0 +1,46 @@
+{
+    "name": "age_source",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatsdatalakestorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "AgeRangeT.csv",
+                "folderPath": "db_out",
+                "fileSystem": "inputdestination"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "AgeId",
+                "type": "String"
+            },
+            {
+                "name": "Under18",
+                "type": "String"
+            },
+            {
+                "name": "YoungAdult",
+                "type": "String"
+            },
+            {
+                "name": "Adult",
+                "type": "String"
+            },
+            {
+                "name": "OlderAdult",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

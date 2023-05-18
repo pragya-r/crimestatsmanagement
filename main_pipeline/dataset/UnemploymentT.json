@@ -1,0 +1,29 @@
+{
+    "name": "UnemploymentT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "UnemploymentId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "AvgRate",
+                "type": "decimal",
+                "precision": 4,
+                "scale": 2
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "UnemploymentT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

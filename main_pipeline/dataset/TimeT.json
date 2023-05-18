@@ -1,0 +1,43 @@
+{
+    "name": "TimeT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "TimeId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Morning",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Afternoon",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Evening",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Night",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "TimeT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

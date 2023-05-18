@@ -1,0 +1,52 @@
+{
+    "name": "LgaT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "LgaId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "LgaName",
+                "type": "varchar"
+            },
+            {
+                "name": "OffenceId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "IncomeId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "IndexId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "PopulationId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "UnemploymentId",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "LgaT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

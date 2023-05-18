@@ -1,0 +1,7 @@
+selected resource name:		lgastatistics_pipeline
+selected resource type:		pipeline
+factory name:			lgastatdatafactory
+factory location:		australiasoutheast
+subscription id:		7ba7350a-7e70-4465-8182-f05fb152b934
+data flow session id:		ec814622-9b45-4008-9ff8-85434f03a2f0
+time of download (UTC):		Thu, 18 May 2023 16:19:11 GMT

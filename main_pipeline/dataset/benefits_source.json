@@ -1,0 +1,46 @@
+{
+    "name": "benefits_source",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatsdatalakestorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "BenefitsT.csv",
+                "folderPath": "db_out",
+                "fileSystem": "inputdestination"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "BenefitsId",
+                "type": "String"
+            },
+            {
+                "name": "HealthCareCard",
+                "type": "String"
+            },
+            {
+                "name": "JobSeekerPayment",
+                "type": "String"
+            },
+            {
+                "name": "LowIncomeCard",
+                "type": "String"
+            },
+            {
+                "name": "YouthAllowance",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

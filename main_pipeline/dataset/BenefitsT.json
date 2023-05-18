@@ -1,0 +1,43 @@
+{
+    "name": "BenefitsT",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "lgastatssqldb",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "BenefitsId",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "HealthCareCard",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "JobSeekerPayment",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "LowIncomeCard",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "YouthAllowance",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "BenefitsT"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
