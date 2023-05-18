@@ -5,3 +5,4 @@ CSMS is a comprehensive platform in which users will have the ability to track a
 This section will describe the prerequisites of running our Azure Data Factory pipelines, application, and surrounding services.
 
 ### Azure Data Factory
+In order to run the pipelines, all files within the directory, **main_pipeline**, must be downloaded. Additionally, be prepared to use Azure Powershell to upload the code and create the pipelines.
