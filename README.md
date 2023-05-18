@@ -5,7 +5,7 @@ CSMS is a comprehensive platform in which users will have the ability to track a
 This section will describe the prerequisites of running our Azure Data Factory pipelines, application, and surrounding services.
 
 ### Azure Data Factory
-In order to run the pipelines, all files within the directory, **main_pipeline**, must be downloaded. Additionally, be prepared to use Azure Powershell to upload the code and create the pipelines.
+In order to run the pipelines, all files within the directory, **main_pipeline**, must be downloaded. The code will be uploaded onto Azure Powershell create the pipelines.
 
 ### SQL Database
 An Azure SQL database is used as the final store. Table's within the database can be found under the directory, **sql_db**.
