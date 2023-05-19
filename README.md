@@ -1,6 +1,8 @@
 # NSW Crime Statistics Management System
 CSMS is a comprehensive platform in which users will have the ability to track and analyse crimes rates alongside socio-economic measures on an interactive dashboard.
 
+<img width="452" alt="image" src="https://github.com/pragya-r/crimestatsmanagementsystem/assets/114908234/c851ebcf-2162-434a-9646-f106e0991e54">
+
 To just view our application use this link: 
 https://app.powerbi.com/reportEmbed?reportId=1c2afab0-996d-403e-aa97-7c59852f90ca&autoAuth=true&ctid=e8911c26-cf9f-4a9c-878e-527807be8791
 
