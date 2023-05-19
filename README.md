@@ -12,13 +12,13 @@ To view this application on a Mac uses the follwoing link below and you need to 
 In order to run the pipelines, all files within the directory, **main_pipeline**, must be downloaded. The code will be uploaded onto Azure Powershell create the pipelines.
 
 ### SQL Database
-An Azure SQL database is used as the final store. Table's within the database can be found under the directory, **sql_db**.
+An Azure SQL database is used as the final store. Table's within the database can be found in the file** db_schema.sql**.
 
 ### Azure Databricks notebook
 The code used in the databricks note book can be found in **lgaETL.py**.
 
 ### Power Bi
-To import our report template and configure a connection to a SQL server, Power Bi desktop is required.
+To import our report template and configure a connection to a SQL server, Power Bi desktop is required. The template for the report is called **LGAStatsTemplate.final.pbit**.
 
 ## Set-up
 ### Step 1
@@ -40,7 +40,7 @@ Similarly, for the linked services, use the following command.
 Set-AzureRmDataFactoryV2LinkedService
 
 ### Step 2
-For the systems database, run the query sql_db.sql, to create the tables. 
+For the systems database, run the query db_schema.sql, to create the tables. 
 
 
 ### Step 3
