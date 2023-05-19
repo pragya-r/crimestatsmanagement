@@ -20,7 +20,7 @@ The code used in the databricks note book can be found in **lgaETL.py**.
 ### Power Bi
 To import our report template and configure a connection to a SQL server, Power Bi desktop is required.
 
-## Test Procedure
+## Set-up
 ### Step 1
 On Azure Powershell log into Azure account and select subscription. Replace "subscription name" with your choosen subscription.
 
